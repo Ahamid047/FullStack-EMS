@@ -1,6 +1,14 @@
-import { Layout } from 'lucide-react'
-import {Toaster} from 'react-hot-toaster'
-import { Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
+import { Toaster } from 'react-hot-toast'
+import Layout from './pages/Layout'
+import Login from './pages/LoginLanding'
+import Dashboard from './pages/Dashboard'
+import Employee from './pages/Employee'
+import Attandance from './pages/Attandance'
+import Leave from './pages/Leave'
+import PaySlips from './pages/PaySlips'
+import PrintSlips from './pages/PrintSlips'
+import Settings from './pages/Settings'
 
 const App = () => {
   return (
