@@ -1,5 +1,9 @@
-const Login = () => {
-  return <div>Login page</div>
+import React from 'react'
+
+const LoginLanding = () => {
+  return (
+    <div>LoginLanding</div>
+  )
 }
 
-export default Login
+export default LoginLanding

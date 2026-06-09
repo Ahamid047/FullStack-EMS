@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 import Layout from './pages/Layout'
-import Login from './pages/LoginLanding'
+import LoginLanding from './pages/LoginLanding'
 import Dashboard from './pages/Dashboard'
 import Employee from './pages/Employee'
 import Attandance from './pages/Attandance'
@@ -15,7 +15,16 @@ const App = () => {
     <>
       <Toaster />
       <Routes>
-        <Route  path ="/login" element ={<Login/>}/>
+        <Route index element ={<LoginLanding/>}/>
+        <Route path ="/login" element ={<LoginLanding/>}/>
+
+        {/* TODO: add a LoginForm component and import it before using admin/employee login paths */}
+        <Route path ="/login/admin" element ={<LoginLanding/>}/>
+
+        <Route path ="/login/employee" element ={<LoginLanding/>}/>
+
+
+
         <Route element = {<Layout/>}>
           <Route path ="/dashboard" element ={<Dashboard/>}/>
           <Route path ="/employee" element ={<Employee/>}/>
